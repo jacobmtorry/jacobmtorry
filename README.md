@@ -34,9 +34,24 @@ Electrical & Computer Engineering student at UIUC focused on computer architectu
 ![Markdown](https://img.shields.io/badge/Markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
 
 # 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=jacobmtorry&theme=dark&hide_border=false&include_all_commits=false&count_private=true)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=jacobmtorry&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=jacobmtorry&theme=dark&hide_border=false&include_all_commits=false&count_private=true&layout=compact)
+<div align="center">
+
+<!-- Main Stats -->
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jacobmtorry&theme=dark&hide_border=false&include_all_commits=false&count_private=true&layout=compact&card_width=500" />
+
+<br/><br/>
+
+<!-- Side-by-side stats -->
+  <tr>
+    <td>
+      <img src="https://nirzak-streak-stats.vercel.app/?user=jacobmtorry&theme=dark&hide_border=false" />
+    </td>
+    <td>
+      <img src="https://github-readme-stats.vercel.app/api?username=jacobmtorry&theme=dark&hide_border=false&include_all_commits=false&count_private=true" />
+    </td>
+  </tr>
+</div>
+
 
 ## 🏆 GitHub Trophies
 ![](https://github-profile-trophy.vercel.app/?username=jacobmtorry&theme=radical&no-frame=false&no-bg=true&margin-w=4)
