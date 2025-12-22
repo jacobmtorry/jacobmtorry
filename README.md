@@ -44,10 +44,10 @@ Electrical & Computer Engineering student at UIUC focused on computer architectu
 <!-- Side-by-side stats -->
   <tr>
     <td>
-      <img src="https://nirzak-streak-stats.vercel.app/?user=jacobmtorry&theme=dark&hide_border=false" />
+      <img src="https://nirzak-streak-stats.vercel.app/?user=jacobmtorry&theme=dark&hide_border=false&card_width=380" />
     </td>
     <td>
-      <img src="https://github-readme-stats.vercel.app/api?username=jacobmtorry&theme=dark&hide_border=false&include_all_commits=false&count_private=true" />
+      <img src="https://github-readme-stats.vercel.app/api?username=jacobmtorry&theme=dark&hide_border=false&include_all_commits=false&count_private=true&card_width=380" />
     </td>
   </tr>
 </div>
