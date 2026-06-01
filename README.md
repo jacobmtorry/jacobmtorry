@@ -1,59 +1,118 @@
-# 💫 About Me:
-Electrical & Computer Engineering student at UIUC focused on computer architecture, FPGA design, and full-stack development. I build systems that span hardware and software—from RISC-V processors and FPGA graphics pipelines to dabbling in scalable web apps.
+# Hi, I'm Jacob Torry
 
+Electrical & Computer Engineering student at the University of Illinois Urbana-Champaign focused on RTL design, FPGA development, and computer architecture.
 
-## 🌐 Socials:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/jacobtorry) 
+I build digital systems in Verilog/SystemVerilog, with interests in RISC-V processors, pipelined datapaths, cache design, memory systems, FPGA graphics, and hardware verification.
 
-# 💻 Tech Stack:
+## Focus Areas
+
+- RTL design in Verilog/SystemVerilog
+- FPGA development and bring-up
+- Computer architecture
+- RISC-V processor design
+- Pipelining, hazards, forwarding, and branch control
+- Caches and memory systems
+- AXI4-Lite peripherals
+- HDMI/VGA graphics pipelines
+- Testbenches, simulation, and debugging
+
+## Featured RTL / FPGA Work
+
+### Pipelined RISC-V Processor
+Designed and debugged parts of a pipelined RV32I processor, including instruction fetch, decode, execute, memory, and writeback stages.
+
+Key topics:
+- Pipeline registers
+- Load-use hazard detection
+- Forwarding paths
+- Branch and jump control
+- Memory interface handling
+- RVFI-style verification/debugging
+
+### Set-Associative Cache
+Implemented and debugged a state-machine-based cache design.
+
+Key topics:
+- 4-way set associativity
+- Write-back and write-allocate behavior
+- Tag, valid, dirty, and data arrays
+- Tree-PLRU replacement
+- Allocate and writeback states
+- CPU-side and memory-side handshaking
+
+### FPGA Pac-Man / HDMI Graphics
+Built an FPGA-based graphics system for a Pac-Man-style game using tilemaps, sprites, BRAM, and HDMI output.
+
+Key topics:
+- Tile-based rendering
+- Sprite overlay logic
+- BRAM-backed video data
+- Font/tile ROMs
+- HDMI/VGA timing
+- AXI4-Lite register interface
+- Hardware/software interaction with MicroBlaze C code
+
+### HDMI Text Controller
+Developed a custom AXI4-Lite HDMI text controller peripheral.
+
+Key topics:
+- VRAM access
+- Palette registers
+- Font ROM indexing
+- Color mapping
+- BRAM read latency handling
+- Timing optimization
+
+## RTL / Hardware Tech Stack
+
 ![Verilog](https://img.shields.io/badge/Verilog-8A2BE2.svg?style=for-the-badge)
 ![SystemVerilog](https://img.shields.io/badge/SystemVerilog-6A5ACD.svg?style=for-the-badge)
+![RTL Design](https://img.shields.io/badge/RTL%20Design-222222.svg?style=for-the-badge)
 ![FPGA](https://img.shields.io/badge/FPGA-FF6F00.svg?style=for-the-badge)
 ![RISC--V](https://img.shields.io/badge/RISC--V-283272.svg?style=for-the-badge&logo=riscv&logoColor=white)
-![Xilinx Vivado](https://img.shields.io/badge/Xilinx%20Vivado-E01F27.svg?style=for-the-badge&logo=xilinx&logoColor=white)
-![Synopsys VCS](https://img.shields.io/badge/Synopsys%20VCS-1E1E1E.svg?style=for-the-badge)
-![Synopsys](https://img.shields.io/badge/Synopsys-000000.svg?style=for-the-badge)
-![C](https://img.shields.io/badge/C-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3670A0.svg?style=for-the-badge&logo=python&logoColor=ffdd54)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC.svg?style=for-the-badge&logo=visualstudiocode&logoColor=white)
-![Windows Terminal](https://img.shields.io/badge/Windows%20Terminal-%234D4D4D.svg?style=for-the-badge&logo=windows-terminal&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-![SharePoint](https://img.shields.io/badge/SharePoint-0078D4.svg?style=for-the-badge&logo=microsoft-sharepoint&logoColor=white)
-![AutoCAD](https://img.shields.io/badge/AutoCAD-E51937.svg?style=for-the-badge&logo=autodesk&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
-![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white)
-![LaTeX](https://img.shields.io/badge/LaTeX-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white)
-![Markdown](https://img.shields.io/badge/Markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
+![Computer Architecture](https://img.shields.io/badge/Computer%20Architecture-0B5394.svg?style=for-the-badge)
+![Digital Design](https://img.shields.io/badge/Digital%20Design-674EA7.svg?style=for-the-badge)
 
-# 📊 GitHub Stats:
+## Tools
+
+![Xilinx Vivado](https://img.shields.io/badge/Xilinx%20Vivado-E01F27.svg?style=for-the-badge)
+![Vitis](https://img.shields.io/badge/Vitis-E01F27.svg?style=for-the-badge)
+![Synopsys VCS](https://img.shields.io/badge/Synopsys%20VCS-1E1E1E.svg?style=for-the-badge)
+![Verdi](https://img.shields.io/badge/Verdi-004B87.svg?style=for-the-badge)
+![GTKWave](https://img.shields.io/badge/GTKWave-2E8B57.svg?style=for-the-badge)
+![VS Code](https://img.shields.io/badge/VS%20Code-007ACC.svg?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624.svg?style=for-the-badge&logo=linux&logoColor=black)
+
+## Programming for Hardware Projects
+
+![C](https://img.shields.io/badge/C-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3670A0.svg?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Assembly](https://img.shields.io/badge/Assembly-555555.svg?style=for-the-badge)
+![RISC--V Assembly](https://img.shields.io/badge/RISC--V%20Assembly-283272.svg?style=for-the-badge&logo=riscv&logoColor=white)
+
+## Currently Learning / Building
+
+- More robust RTL testbenches
+- Formal verification basics
+- Cache/memory-system design
+- Timing closure and critical path reduction
+- FPGA-based video and graphics systems
+- Processor verification workflows
+
+## Connect
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Jacob%20Torry-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/jacobtorry)
+
+---
+
+## GitHub Stats
+
 <div align="center">
 
-<!-- Main Stats -->
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jacobmtorry&theme=dark&hide_border=false&include_all_commits=false&count_private=true&layout=compact&card_width=500" />
 
 <br/><br/>
 
-<!-- Side-by-side stats -->
-  <tr>
-    <td>
-      <img src="https://nirzak-streak-stats.vercel.app/?user=jacobmtorry&theme=dark&hide_border=false&card_width=380" />
-    </td>
-    <td>
-      <img src="https://github-readme-stats.vercel.app/api?username=jacobmtorry&theme=dark&hide_border=false&include_all_commits=false&count_private=true&card_width=380" />
-    </td>
-  </tr>
+<img src="https://github-readme-stats.vercel.app/api?username=jacobmtorry&theme=dark&hide_border=false&include_all_commits=false&count_private=true&card_width=380" />
+
 </div>
-
-
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=jacobmtorry&theme=radical&no-frame=false&no-bg=true&margin-w=4)
-
-### 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=jacobmtorry&limit=5&theme=dark&combine_all_yearly_contributions=true)
-
----
-[![](https://visitcount.itsvg.in/api?id=jacobmtorry&icon=0&color=0)](https://visitcount.itsvg.in)
-
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
