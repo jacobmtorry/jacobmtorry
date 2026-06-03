@@ -52,17 +52,6 @@ Key topics:
 - AXI4-Lite register interface
 - Hardware/software interaction with MicroBlaze C code
 
-### HDMI Text Controller
-Developed a custom AXI4-Lite HDMI text controller peripheral.
-
-Key topics:
-- VRAM access
-- Palette registers
-- Font ROM indexing
-- Color mapping
-- BRAM read latency handling
-- Timing optimization
-
 ## RTL / Hardware Tech Stack
 
 ![Verilog](https://img.shields.io/badge/Verilog-8A2BE2.svg?style=for-the-badge)
