@@ -91,17 +91,3 @@ Key topics:
 ## Connect
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Jacob%20Torry-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/jacobtorry)
-
----
-
-## GitHub Stats
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jacobmtorry&theme=dark&hide_border=false&include_all_commits=false&count_private=true&layout=compact&card_width=500" />
-
-<br/><br/>
-
-<img src="https://github-readme-stats.vercel.app/api?username=jacobmtorry&theme=dark&hide_border=false&include_all_commits=false&count_private=true&card_width=380" />
-
-</div>
