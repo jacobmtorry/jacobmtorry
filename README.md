@@ -1,93 +1,92 @@
-# Hi, I'm Jacob Torry
+# Hey, I'm Jacob 👋
 
-Electrical & Computer Engineering student at the University of Illinois Urbana-Champaign focused on RTL design, FPGA development, and computer architecture.
+### RTL, RISC-V, and the occasional 01100101 01110010 01110010 01101111 01110010.
 
-I build digital systems in Verilog/SystemVerilog, with interests in RISC-V processors, pipelined datapaths, cache design, memory systems, FPGA graphics, and hardware verification.
+I'm **Jacob Torry**, an Electrical & Computer Engineering student at the **University of Illinois Urbana-Champaign**, focused on **RTL design, FPGA development, and computer architecture**.
 
-## Focus Areas
+I build digital systems in Verilog/SystemVerilog—from sending a byte over UART to getting instructions through an out-of-order processor. I enjoy the whole process: sketching the architecture, writing the RTL, and finding out what the waveform has to say about my assumptions.
 
-- RTL design in Verilog/SystemVerilog
-- FPGA development and bring-up
-- Computer architecture
-- RISC-V processor design
-- Pipelining, hazards, forwarding, and branch control
-- Caches and memory systems
-- AXI4-Lite peripherals
-- HDMI/VGA graphics pipelines
-- Testbenches, simulation, and debugging
+- Expected graduation: December 2026
+- Currently building **Project KHONSU**, an out-of-order RISC-V processor project targeting the Urbana FPGA.
+- Interested in RTL Design / FPGA Engineering / Design Verification / CPU Architecture / SystemVerilog.
+- Away from the waveforms: Formula 1, LEGO, custom PCs, soccer, The Simpsons.
 
-## Featured RTL / FPGA Work
+## Things I've Built
 
-### Pipelined RISC-V Processor
-Designed and debugged parts of a pipelined RV32I processor, including instruction fetch, decode, execute, memory, and writeback stages.
+### RISC-V Processor Projects · ECE 411
 
-Key topics:
-- Pipeline registers
-- Load-use hazard detection
-- Forwarding paths
-- Branch and jump control
-- Memory interface handling
-- RVFI-style verification/debugging
+*From five pipeline stages to instructions executing out of order.*
 
-### Set-Associative Cache
-Implemented and debugged a state-machine-based cache design.
+A progression of SystemVerilog designs covering a five-stage processor, a parameterized cache subsystem, and a Tomasulo-style out-of-order core.
 
-Key topics:
-- 4-way set associativity
-- Write-back and write-allocate behavior
-- Tag, valid, dirty, and data arrays
-- Tree-PLRU replacement
-- Allocate and writeback states
-- CPU-side and memory-side handshaking
+- **Pipeline:** hazard detection, forwarding, stalls, and branch flushes.
+- **Memory:** configurable cache geometry, write-back/write-allocate behavior, and tree-PLRU replacement.
+- **Out-of-order execution:** register renaming, reservation stations, a reorder buffer, and a split load/store queue with store-to-load forwarding.
+- **Verification:** Spike reference checking and RVFI monitoring, with VCS/Verdi for simulation and debugging.
 
-### FPGA Pac-Man / HDMI Graphics
-Built an FPGA-based graphics system for a Pac-Man-style game using tilemaps, sprites, BRAM, and HDMI output.
+**Result I'm proud of:** Achieving the highest frequency (666 MHz) on our out-of-order RISC-V core in a class of about 50 groups.
 
-Key topics:
-- Tile-based rendering
-- Sprite overlay logic
-- BRAM-backed video data
-- Font/tile ROMs
-- HDMI/VGA timing
-- AXI4-Lite register interface
-- Hardware/software interaction with MicroBlaze C code
+📂 Repository: [\[RISC-V REPOSITORY URL\]](https://github.com/jacobmtorry/Computer-Architecture)
 
-## RTL / Hardware Tech Stack
+### UART on FPGA
 
-![Verilog](https://img.shields.io/badge/Verilog-8A2BE2.svg?style=for-the-badge)
-![SystemVerilog](https://img.shields.io/badge/SystemVerilog-6A5ACD.svg?style=for-the-badge)
-![RTL Design](https://img.shields.io/badge/RTL%20Design-222222.svg?style=for-the-badge)
-![FPGA](https://img.shields.io/badge/FPGA-FF6F00.svg?style=for-the-badge)
-![RISC--V](https://img.shields.io/badge/RISC--V-283272.svg?style=for-the-badge&logo=riscv&logoColor=white)
-![Computer Architecture](https://img.shields.io/badge/Computer%20Architecture-0B5394.svg?style=for-the-badge)
-![Digital Design](https://img.shields.io/badge/Digital%20Design-674EA7.svg?style=for-the-badge)
+*One byte, one round trip, a lot of timing.*
 
-## Tools
+Built a SystemVerilog UART on the Urbana FPGA, progressing from individual modules to a working **PC → FPGA → PC echo path**.
 
-![Xilinx Vivado](https://img.shields.io/badge/Xilinx%20Vivado-E01F27.svg?style=for-the-badge)
-![Vitis](https://img.shields.io/badge/Vitis-E01F27.svg?style=for-the-badge)
-![Synopsys VCS](https://img.shields.io/badge/Synopsys%20VCS-1E1E1E.svg?style=for-the-badge)
-![Verdi](https://img.shields.io/badge/Verdi-004B87.svg?style=for-the-badge)
-![GTKWave](https://img.shields.io/badge/GTKWave-2E8B57.svg?style=for-the-badge)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC.svg?style=for-the-badge&logo=visualstudiocode&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624.svg?style=for-the-badge&logo=linux&logoColor=black)
+- Implemented baud-rate generation and independent TX/RX state machines using **8N1 framing**.
+- Wrote self-checking simulations for timing, transmitted frames, received bytes, and TX-to-RX loopback.
+- Demonstrated FPGA loopback and PC serial echo at **115200 baud**, including the effects of a baud-rate mismatch.
 
-## Programming for Hardware Projects
+📂 Repository: [\[UART REPOSITORY URL\]](https://github.com/jacobmtorry/UART) 
 
-![C](https://img.shields.io/badge/C-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3670A0.svg?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Assembly](https://img.shields.io/badge/Assembly-555555.svg?style=for-the-badge)
-![RISC--V Assembly](https://img.shields.io/badge/RISC--V%20Assembly-283272.svg?style=for-the-badge&logo=riscv&logoColor=white)
+### FPGA Pac-Man · ECE 385
 
-## Currently Learning / Building
+*Chasing ghosts, debugging pixels.*
 
-- More robust RTL testbenches
-- Formal verification basics
-- Cache/memory-system design
-- Timing closure and critical path reduction
-- FPGA-based video and graphics systems
-- Processor verification workflows
+An FPGA implementation of Pac-Man combining custom display hardware with MicroBlaze software, developed with **Logan Wonnacott**.
 
-## Connect
+- Hardware text/tile rendering and VGA/HDMI output.
+- USB keyboard input, ghost behaviors, pellets, power-ups, and score tracking.
+- An **AXI4-Lite interface** connecting MicroBlaze game logic to the custom display peripheral.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Jacob%20Torry-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/jacobtorry)
+
+📂 Repository: [\[PAC-MAN REPOSITORY URL\]](https://github.com/jacobmtorry/Pacman) · 🎬 [Watch the demo](https://www.youtube.com/watch?v=ORMuu2yWL28&t=17s)
+
+## On the Workbench: Project KHONSU
+
+*The goal: a processor you can watch think.*
+
+An ongoing team project with **Samuel Slaw**, targeting an **out-of-order RISC-V processor on the Real Digital Urbana Spartan-7 FPGA**. The planned HDMI dashboard will visualize registers, memory, instruction history, and performance metrics.
+
+**Working now:** Docker development environment, passing RTL smoke test, and verified RV32I software compilation.
+
+**Up next:** processor integration, Spike-based reference checking, FPGA bring-up, DDR3 integration, and the HDMI dashboard.
+
+**My focus:** Currently developing fetch stage.
+
+📂 Repository: [\[KHONSU REPOSITORY URL\]](https://github.com/jacobmtorry/KHONSU)
+
+## 🛠️ My Toolbox
+
+| Area | Languages & Tools |
+| --- | --- |
+| RTL & digital design | SystemVerilog, Verilog, VHDL |
+| FPGA development | Vivado, Vitis, Urbana FPGA |
+| Simulation & debug | VCS, Verdi, Verilator, GTKWave, Surfer |
+| Processor verification | Spike, RVFI, custom testbenches |
+| Supporting software | C, Python, RISC-V assembly |
+| Development environment | Linux, Docker, Git |
+
+**Currently learning:** CPU Architecture, writing clean functional verilog
+
+## 🤝 Let's Connect
+
+I'm happy to talk about processor design, FPGA projects, or The Simpson.
+
+- [LinkedIn](https://linkedin.com/in/jacobtorry)
+- [Portfolio Website](https://jacobmtorry.github.io/)
+
+---
+
+*Simulate. Inspect waveforms. Find the bug. Repeat.*
